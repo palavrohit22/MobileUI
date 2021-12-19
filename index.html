@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product UI</title>
+    <script src="script.js"></script>
+</head>
+
+<body data-class="body-scroll">
+    <!-- header section -->
+    <header>
+        <div class="box-common-container">
+            <nav class="header-navbar">
+                <div class="primary-logo"><span>SITENAME</span></div>
+                <div class="nav-left">
+                    <!-- mobile tab -->
+                    <button id="dropdown-toggler" data-class="dropdown-active" class="mobile-tab-icon"
+                        onclick="opendropdown()">
+                        <span class="tab-line tab-line-first"></span>
+                        <span class="tab-line tab-line-second"></span>
+                        <span class="tab-line tab-line-third"></span>
+                    </button>
+                    <!-- Desktop list -->
+                    <ul id="menu-list" class="menu main-nav-list">
+                        <li class="nav-item"><a class="nav-link">Feature phones</a></li>
+                        <li class="nav-item"><a class="nav-link">Accessories</a></li>
+                        <li class="nav-item"><a class="nav-link">Wearable tech</a></li>
+                        <li class="nav-item"><a class="nav-link">Popular brands</a></li>
+                        <li class="nav-item"><a class="nav-link">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- breadcrumb section -->
+    <section class="box-common-container">
+        <div class="breadcrumb-list">
+            <span>Home</span>
+            <span>/Feature Phones</span>
+            <span>/Samsung Galaxy S8+</span>
+        </div>
+    </section>
+    <!-- Product detail section -->
+    <section class="Product-detail-section">
+        <div class="box-common-container">
+            <div class="product-detail-card">
+                <div class="product-img-left">
+                    <img src="/image/Product_1.png" alt="Product_image" class="product-img"><br>
+                    <input type="checkbox" id="Product" name="Product" value="Product" class="checkbox-tick">
+                    <label for="Product" class="checkbox-label"> Add to Compare</label><br>
+                </div>
+                <div class="product-info-right">
+                    <div class="product-top-section">
+                        <div class="product-name">
+                            <h2>Samsung Galaxy S8+</h2>
+                            <p class="rating-info">
+                                <span class="grey-text">4.5</span>
+                                <span class="fa fa-star star-yellow star-icon"></span>
+                                <span class="version">Android 7.1Nougat</span>
+                            </p>
+                            <div class="color-patch">
+                                <p class="color-grey"></p>
+                                <p class="color-cream"></p>
+                                <p class="color-black"></p>
+                            </div>
+                            <p class="price-list">
+                                <span>$ 199.99</span>
+                                <button type="button" class="btn buy-now-btn">SHOP NOW</button>
+                            </p>
+                        </div>
+                        <div class="product-rating">
+                            <p class="text-right">
+                                <img src="/image/rating_svg.jpeg" alt="rating">
+                            <p class="rating-info">
+                                <span class="rating-text">RATING</span>
+                                <span class="fa fa-info-circle"></span>
+                                <br>
+                                <span class="rating-span1">81</span><span class="rating-span2">Excellent</span>
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product-bottom-section">
+                        <div class="access-section">
+                            <p class="access-icon"><span class="fa fa-camera"></span></p>
+                            <p class="access-title"><span>16 MP</span></p>
+                            <p class="access-subtitle"><span>Good</span></p>
+                        </div>
+                        <div class="access-section">
+                            <p class="access-icon"><span class="fa fa-microchip"></span></p>
+                            <p class="access-title"><span>3 GB RAM</span></p>
+                            <p class="access-subtitle"><span>Average</span></p>
+                        </div>
+                        <div class="access-section">
+                            <p class="access-icon"><span class="fa fa-mobile"></span></p>
+                            <p class="access-title"><span>5.5 inch</span></p>
+                            <p class="access-subtitle"><span>Bad</span></p>
+                        </div>
+                        <div class="access-section">
+                            <p class="access-icon"><span class="fa fa-battery-full fa-rotate-270"></span></p>
+                            <p class="access-title"><span>500 MAH</span></p>
+                            <p class="access-subtitle"><span>Excellent</span></p>
+                        </div>
+                    </div>
+                    <div class="product-brand-section">
+                        <div class="brand-card">
+                            <img src="/image/logo_1.png" alt="Logo_AT&T" class="brand-img">
+                            <p class="brand-subtitle"><span>$29.99 for 500 minutes</span></p>
+                        </div>
+                        <div class="brand-card">
+                            <img src="/image/logo_2.png" alt="Logo_Sprint" class="brand-img">
+                            <p class="brand-subtitle"><span>$29.99 for 500 minutes</span></p>
+                        </div>
+                        <div class="brand-card">
+                            <img src="/image/logo_4.jpg" alt="Logo_Verizon" class="brand-img">
+                            <p class="brand-subtitle"><span>$29.99 for 500 minutes</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tab section -->
+    <section class="tab-section">
+        <div class="box-common-container">
+            <div class="table-container">
+                <div class="table-contain">
+                    <div class="tab-list">
+                        <div class="tab-item tab-item-active">
+                            <p class="tab-link"><span class="fa fa-camera"></span></p>
+                            <p class="tab-link"><span>Camera</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="fa fa-mobile"></span></p>
+                            <p class="tab-link"><span>Display</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="fa fa-battery-full fa-rotate-270"></span></p>
+                            <p class="tab-link"><span>Battery</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="fa fa-microchip"></span></p>
+                            <p class="tab-link"><span>Performance</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="fa fa-floppy-o"></span></p>
+                            <p class="tab-link"><span>Storage</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="fa fa-hand-o-up"></span></p>
+                            <p class="tab-link"><span>Usability</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="fa fa-wifi"></span></p>
+                            <p class="tab-link"><span>Connectivity</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="fa fa-comment"></span></p>
+                            <p class="tab-link"><span>Reviews</span></p>
+                        </div>
+                        <div class="tab-item">
+                            <p class="tab-link"><span class="">⇆</span></p>
+                            <p class="tab-link"><span>Compare</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tab click left right section -->
+    <section class="tab-click-section">
+        <div class="box-common-container">
+            <div class="main-tab-display">
+                <div class="tab-left-detail">
+                    <div class="tab-shadow">
+                        <div class="tab-feature">
+                            <div class="block-heading">
+                                <h3 class="block-title"><span class="fa fa-camera block-header-icon"></span> Camera</h3>
+                            </div>
+                            <div class="feature-info">
+                                <div class="field-block">
+                                    <h5 class="field-title">Front Camera</h5>
+                                    <h5 class="field-detail">8 megapixels</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Recording Resolution</h5>
+                                    <h5 class="field-detail">1920 X 1020</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Rear camera</h5>
+                                    <h5 class="field-detail">12 megapixels</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Integrated camera</h5>
+                                    <h5 class="field-detail">Yes - Front and Back</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-feature">
+                            <div class="block-heading">
+                                <h3 class="block-title"><span class="fa fa-mobile block-header-icon"></span> Display
+                                </h3>
+                            </div>
+                            <div class="feature-info">
+                                <div class="field-block">
+                                    <h5 class="field-title">Touch Screen</h5>
+                                    <h5 class="field-detail">Yes</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Screen Size</h5>
+                                    <h5 class="field-detail">5.5 inches</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Screen Resolution</h5>
+                                    <h5 class="field-detail">1920 X 1080</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Integrated camera</h5>
+                                    <h5 class="field-detail">Yes - Front and Back</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-feature">
+                            <div class="block-heading">
+                                <h3 class="block-title"><span
+                                        class="fa fa-battery-full fa-rotate-270 block-header-icon"></span> Battery</h3>
+                            </div>
+                            <div class="feature-info">
+                                <div class="field-block">
+                                    <h5 class="field-title">Charging Interface(S)</h5>
+                                    <h5 class="field-detail">Micro USB</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Wireless Charging</h5>
+                                    <h5 class="field-detail">No</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Battery Capacity</h5>
+                                    <h5 class="field-detail">3000 milliampere hours</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Fast Charging</h5>
+                                    <h5 class="field-detail">TurboPower</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-feature">
+                            <div class="block-heading">
+                                <h3 class="block-title"><span class="fa fa-microchip block-header-icon"></span>
+                                    Performance
+                                </h3>
+                            </div>
+                            <div class="feature-info">
+                                <div class="field-block">
+                                    <h5 class="field-title">Process Brand</h5>
+                                    <h5 class="field-detail">Qualcomm Snapdragon</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Processor Speed</h5>
+                                    <h5 class="field-detail">2 gigahertz</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Processor Model</h5>
+                                    <h5 class="field-detail">625</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Memory (RAM)</h5>
+                                    <h5 class="field-detail">3 gigabytes</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-feature">
+                            <div class="block-heading">
+                                <h3 class="block-title"><span class="fa fa-floppy-o block-header-icon"></span> Storage
+                                </h3>
+                            </div>
+                            <div class="feature-info">
+                                <div class="field-block">
+                                    <h5 class="field-title">Expandable Memory Up To</h5>
+                                    <h5 class="field-detail">128 gigabytes</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Internal Memory</h5>
+                                    <h5 class="field-detail">32 gigabytes</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-feature">
+                            <div class="block-heading">
+                                <h3 class="block-title"><span class="fa fa-hand-o-up block-header-icon"></span>
+                                    Usability
+                                </h3>
+                            </div>
+                            <div class="feature-info">
+                                <div class="field-block">
+                                    <h5 class="field-title">Headphone Jack</h5>
+                                    <h5 class="field-detail">Yes</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Weight</h5>
+                                    <h5 class="field-detail">5.93 ounces</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Width</h5>
+                                    <h5 class="field-detail">3 inches</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Keyboard Type</h5>
+                                    <h5 class="field-detail">Touch Screen</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Water Resistance</h5>
+                                    <h5 class="field-detail">No</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-feature">
+                            <div class="block-heading">
+                                <h3 class="block-title"><span class="fa fa-wifi block-header-icon"></span> Connectivity
+                                </h3>
+                            </div>
+                            <div class="feature-info">
+                                <div class="field-block">
+                                    <h5 class="field-title">Sim Card Size</h5>
+                                    <h5 class="field-detail">Nano SIM</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Internet Connectable</h5>
+                                    <h5 class="field-detail">Yes</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">Bluetooth Enabled</h5>
+                                    <h5 class="field-detail">Yes</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">4G LTE Brand</h5>
+                                    <h5 class="field-detail">1, 12, 13, 17, 2 ,25, 26, 3, 38, 4, 41, 5, 66, 7, 8</h5>
+                                </div>
+                                <div class="field-block">
+                                    <h5 class="field-title">SIM card Slots</h5>
+                                    <h5 class="field-detail">Single SIM</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-right-detail">
+                    <div class="advertise-img">
+                        <img src="/image/Adv_1.png" alt="advertise_imgage">
+                    </div>
+                    <div class="related-product-info">
+                        <h5 class="related-title">Related Products</h5>
+                        <div class="related-product-list">
+                            <div class="related-product-card">
+                                <div class="related-product-img">
+                                    <img src="/image/relate_product_1.png" alt="samsung">
+                                </div>
+                                <div class="related-product-detail">
+                                    <h5 class="related-product-name text-truncate">Samsung galaxy A6</h5>
+                                    <p class="related-product-price">$ 199.99</p>
+                                    <div class="related-rating">
+                                        <div class="related-rating-count">4.5</div>
+                                        <div class="star-yellow"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related-product-card">
+                                <div class="related-product-img">
+                                    <img src="/image/relate_product_1.png" alt="samsung">
+                                </div>
+                                <div class="related-product-detail">
+                                    <h5 class="related-product-name text-truncate">Samsung galaxy A6</h5>
+                                    <p class="related-product-price">$ 199.99</p>
+                                    <div class="related-rating">
+                                        <div class="related-rating-count">4.5</div>
+                                        <div class="star-yellow"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related-product-card">
+                                <div class="related-product-img">
+                                    <img src="/image/relate_product_1.png" alt="samsung">
+                                </div>
+                                <div class="related-product-detail">
+                                    <h5 class="related-product-name text-truncate">Samsung galaxy A6</h5>
+                                    <p class="related-product-price">$ 199.99</p>
+                                    <div class="related-rating">
+                                        <div class="related-rating-count">4.5</div>
+                                        <div class="star-yellow"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related-product-card">
+                                <div class="related-product-img">
+                                    <img src="/image/relate_product_1.png" alt="samsung">
+                                </div>
+                                <div class="related-product-detail">
+                                    <h5 class="related-product-name text-truncate">Samsung galaxy A6</h5>
+                                    <p class="related-product-price">$ 199.99</p>
+                                    <div class="related-rating">
+                                        <div class="related-rating-count">4.5</div>
+                                        <div class="star-yellow"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related-product-card">
+                                <div class="related-product-img">
+                                    <img src="/image/relate_product_1.png" alt="samsung">
+                                </div>
+                                <div class="related-product-detail">
+                                    <h5 class="related-product-name text-truncate">Samsung galaxy A6</h5>
+                                    <p class="related-product-price">$ 199.99</p>
+                                    <div class="related-rating">
+                                        <div class="related-rating-count">4.5</div>
+                                        <div class="star-yellow"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section -->
+    <section class="review-section">
+        <div class="box-common-container">
+            <div class="review-block">
+                <div class="block-heading">
+                    <h3 class="block-title"><span class="fa fa-comment block-header-icon" aria-hidden="true"></span>
+                        Reviews
+                    </h3>
+                    <div class="sort-section">
+                        <label>Sort By</label>
+                        <select id="sort-filter">
+                            <option value="ALL">Relevance</option>
+                            <option value="Relevant">Relevance</option>
+                            <option value="Most Rated">Highly Rated</option>
+                            <option value="Trending">Trending</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="comment-section">
+                    <div class="table-container">
+                        <div class="table-contain">
+                            <div class="comment-filter">
+                                <span>All Reviews (40)</span>
+                                <span>Wireless (21)</span>
+                                <span>Data (4)</span>
+                                <span>Bluetooth (3)</span>
+                                <span>carrier (2)</span>
+                                <span>Email (2)</span>
+                                <span>Internet (2)</span>
+                                <span>LTE (2)</span>
+                                <span>Emails (2)</span>
+                                <span>Range (12)</span>
+                                <span>Signal (22)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-card">
+                        <div class="positive-type-comment">
+                            <div class="comment-type-heading"><span class="fa fa-plus-circle"></span>
+                                <p>Positive Reviews</p>
+                            </div>
+                            <div class="comment-info">
+                                <div class="comment-top-section">
+                                    <div class="comment-rating-count">4.5</div>
+                                    <div class="star-yellow comment-star-icon"><span class="fa fa-star"></span></div>
+                                    <div class="comment-date">26 Jan, 2018</div>
+                                </div>
+                                <div class="comment-message">The best thing with this phone, I can use it all the
+                                    carriers in
+                                    the US.</div>
+                                <div class="comment-user-name">John Doe</div>
+                            </div>
+                            <div class="comment-info">
+                                <div class="comment-top-section">
+                                    <div class="comment-rating-count">4.5</div>
+                                    <div class="star-yellow comment-star-icon"><span class="fa fa-star"></span></div>
+                                    <div class="comment-date">26 Jan, 2018</div>
+                                </div>
+                                <div class="comment-message">The best thing with this phone, I can use it all the
+                                    carriers in
+                                    the US.</div>
+                                <div class="comment-user-name">John Doe</div>
+                            </div>
+                            <div class="comment-info">
+                                <div class="comment-top-section">
+                                    <div class="comment-rating-count">4.5</div>
+                                    <div class="star-yellow comment-star-icon"><span class="fa fa-star"></span></div>
+                                    <div class="comment-date">26 Jan, 2018</div>
+                                </div>
+                                <div class="comment-message">The best thing with this phone, I can use it all the
+                                    carriers in
+                                    the US.</div>
+                                <div class="comment-user-name">John Doe</div>
+                            </div>
+                        </div>
+                        <div class="Negative-type-comment">
+                            <div class="comment-type-heading"><span class="fa fa-minus-circle"></span>
+                                <p>Negative Reviews</p>
+                            </div>
+                            <div class="comment-info">
+                                <div class="comment-top-section">
+                                    <div class="comment-rating-count">4.5</div>
+                                    <div class="star-yellow comment-star-icon"><span class="fa fa-star"></span></div>
+                                    <div class="comment-date">26 Jan, 2018</div>
+                                </div>
+                                <div class="comment-message">The best thing with this phone, I can use it all the
+                                    carriers in
+                                    the US.</div>
+                                <div class="comment-user-name">John Doe</div>
+                            </div>
+                            <div class="comment-info">
+                                <div class="comment-top-section">
+                                    <div class="comment-rating-count">4.5</div>
+                                    <div class="star-yellow comment-star-icon"><span class="fa fa-star"></span></div>
+                                    <div class="comment-date">26 Jan, 2018</div>
+                                </div>
+                                <div class="comment-message">The best thing with this phone, I can use it all the
+                                    carriers in
+                                    the US.</div>
+                                <div class="comment-user-name">John Doe</div>
+                            </div>
+                            <div class="comment-info">
+                                <div class="comment-top-section">
+                                    <div class="comment-rating-count">4.5</div>
+                                    <div class="star-yellow comment-star-icon"><span class="fa fa-star"></span></div>
+                                    <div class="comment-date">26 Jan, 2018</div>
+                                </div>
+                                <div class="comment-message">The best thing with this phone, I can use it all the
+                                    carriers in
+                                    the US.</div>
+                                <div class="comment-user-name">John Doe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- compare section -->
+    <section class="compare-section">
+        <div class="box-common-container">
+            <div class="compare-block">
+                <div class="block-heading">
+                    <h3 class="block-title"><span class="block-header-icon">⇆</span> Compare</h3>
+                </div>
+                <div class="graph-section">
+                    <div class="compare-graph-card">
+                        <div class="progress-card">
+                            <div class="progress-text">All Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">All Android Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value all"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">Current</div>
+                            <div class="progress-patch">
+                                <div class="progress-value current"></div>
+                            </div>
+                        </div>
+                        <div class="progress-count-section">
+                            <div class="h-line">
+                                <div class="line-list">
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                </div>
+                                <div class="progress-timeline">
+                                    <div class="count">0</div>
+                                    <div class="count">2</div>
+                                    <div class="count">4</div>
+                                    <div class="count">6</div>
+                                    <div class="count">8</div>
+                                    <div class="count">10</div>
+                                    <div class="count">12</div>
+                                    <div class="count">14</div>
+                                    <div class="count">16</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-caption"><span>Camera (Megapixels)</span></div>
+                    </div>
+                    <div class="compare-graph-card">
+                        <div class="progress-card">
+                            <div class="progress-text">All Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">All Android Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value all"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">Current</div>
+                            <div class="progress-patch">
+                                <div class="progress-value current"></div>
+                            </div>
+                        </div>
+                        <div class="progress-count-section">
+                            <div class="h-line">
+                                <div class="line-list">
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                </div>
+                                <div class="progress-timeline">
+                                    <div class="count">0</div>
+                                    <div class="count">2</div>
+                                    <div class="count">4</div>
+                                    <div class="count">6</div>
+                                    <div class="count">8</div>
+                                    <div class="count">10</div>
+                                    <div class="count">12</div>
+                                    <div class="count">14</div>
+                                    <div class="count">16</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-caption"><span>RAM (GB)</span></div>
+                    </div>
+                    <div class="compare-graph-card">
+                        <div class="progress-card">
+                            <div class="progress-text">All Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">All Android Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value all"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">Current</div>
+                            <div class="progress-patch">
+                                <div class="progress-value current"></div>
+                            </div>
+                        </div>
+                        <div class="progress-count-section">
+                            <div class="h-line">
+                                <div class="line-list">
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                </div>
+                                <div class="progress-timeline">
+                                    <div class="count">0</div>
+                                    <div class="count">2</div>
+                                    <div class="count">4</div>
+                                    <div class="count">6</div>
+                                    <div class="count">8</div>
+                                    <div class="count">10</div>
+                                    <div class="count">12</div>
+                                    <div class="count">14</div>
+                                    <div class="count">16</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-caption"><span>Display (Inches)</span></div>
+                    </div>
+                    <div class="compare-graph-card">
+                        <div class="progress-card">
+                            <div class="progress-text">All Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">All Android Phones</div>
+                            <div class="progress-patch">
+                                <div class="progress-value all"></div>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <div class="progress-text">Current</div>
+                            <div class="progress-patch">
+                                <div class="progress-value current"></div>
+                            </div>
+                        </div>
+                        <div class="progress-count-section">
+                            <div class="h-line">
+                                <div class="line-list">
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                    <div class="v-line"></div>
+                                </div>
+                                <div class="progress-timeline">
+                                    <div class="count">0</div>
+                                    <div class="count">2</div>
+                                    <div class="count">4</div>
+                                    <div class="count">6</div>
+                                    <div class="count">8</div>
+                                    <div class="count">10</div>
+                                    <div class="count">12</div>
+                                    <div class="count">14</div>
+                                    <div class="count">16</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-caption"><span>Battery (MAH)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div class="box-common-container">
+            <div class="main-footer">
+                <div class="footer-card">
+                    <h6 class="footer-heading logo-name">SITENAME</h6>
+                    <div>
+                        <p class="footer-subheading">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s</p>
+                    </div>
+                    <ul class="footer-list social-media-icons">
+                        <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    <h6 class="footer-heading">Twitter Feeds</h6>
+                    <div>
+                        <p class="footer-subheading">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s</p>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <h6 class="footer-heading">Instagram Feeds</h6>
+                    <ul class="footer-list">
+                        <div class="mb-5">
+                            <div class="gallery-list">
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                                <div class="img-item">
+                                    <div class="">
+                                        <img src="/image/blog_img1.jpg" class="img-fluid" alt="Instagram_feed">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
